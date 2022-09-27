@@ -1,7 +1,8 @@
 import React from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import HomePage from "./Pages/HomePage";
+
+import MainPage from "./Pages/MainPage";
 //import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <>
       <Header />
       <main className="py-3">
-        <h1>Wellcome</h1>
+        <MainPage />
       </main>
       <Footer />
     </>
