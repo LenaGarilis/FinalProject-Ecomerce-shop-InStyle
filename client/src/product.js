@@ -14,7 +14,7 @@ const products = [
   },
   {
     _id: "2",
-    name: "iWomen's leather slippers Bear loves honey",
+    name: "Women's leather slippers Bear loves honey",
     image: "/images/2.jpg",
     description:
       "IA joint collaboration between rxbshoes and Andrey Bartenev, one of the most recognizable contemporary artists. It refers us to childish sincerity, to pure emotions and the joy of life that goes on, no matter what. This collection is beautiful and life-affirming. And the bears turned out to be not only childishly cute, but also mysterious: smiling slyly, they know something, but do not speak.oducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life",
@@ -27,7 +27,7 @@ const products = [
   },
   {
     _id: "3",
-    name: "Women's leather slippers Bear loves honey",
+    name: "Women's slippers Bear loves honey",
     image: "/images/3.jpg",
     description:
       "Silk is a pleasant and beautiful material, which is why we decided to use it for Minimi mules. And of course, we added a comfortable, small 5 cm glass heel for a more playful mood. Suitable for both home and outdoor walks. We advise you to choose a size up, as the narrow nose makes them a little smaller.",
