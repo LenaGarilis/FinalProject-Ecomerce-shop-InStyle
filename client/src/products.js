@@ -27,7 +27,7 @@ const products = [
   },
   {
     _id: "3",
-    name: "Women's slippers Bear loves honey",
+    name: "Women's leather slippers Bear loves honey",
     image: "/images/3.jpg",
     description:
       "Silk is a pleasant and beautiful material, which is why we decided to use it for Minimi mules. And of course, we added a comfortable, small 5 cm glass heel for a more playful mood. Suitable for both home and outdoor walks. We advise you to choose a size up, as the narrow nose makes them a little smaller.",
