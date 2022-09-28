@@ -2,7 +2,7 @@ const products = [
   {
     _id: "1",
     name: "Women's leather slippers Bear loves honey",
-    image: "../public/images/1.jpg",
+    image: "/images/1.jpg",
     description:
       "A joint collaboration between rxbshoes and Andrey Bartenev, one of the most recognizable contemporary artists. It refers us to childish sincerity, to pure emotions and the joy of life that goes on, no matter what. This collection is beautiful and life-affirming. And the bears turned out to be not only childishly cute, but also mysterious: smiling slyly, they know something, but do not speak.",
     brand: "rxbshoes",
