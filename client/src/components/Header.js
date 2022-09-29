@@ -9,7 +9,7 @@ const Header = () => {
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>
-              <strong>BEAR 💛 HONEY</strong>
+              <strong>BEARS 💛 HONEY</strong>
             </Navbar.Brand>
           </LinkContainer>
 
