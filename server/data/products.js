@@ -1,6 +1,5 @@
 const products = [
   {
-    _id: "1",
     name: "Women's leather slippers Bear loves honey",
     image: "/images/1.jpg",
     description:
@@ -13,7 +12,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "2",
     name: "Women's leather slippers Bear loves honey",
     image: "/images/2.jpg",
     description:
@@ -26,7 +24,6 @@ const products = [
     numReviews: 8,
   },
   {
-    _id: "3",
     name: "Women's leather slippers Bear loves honey",
     image: "/images/3.jpg",
     description:
@@ -39,7 +36,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "4",
     name: "Women's leather slippers Bear loves honey",
     image: "/images/4.jpg",
     description:
@@ -52,7 +48,6 @@ const products = [
     numReviews: 12,
   },
   {
-    _id: "5",
     name: "Women's leather slippers Bear loves honey",
     image: "/images/5.jpg",
     description:
@@ -65,7 +60,6 @@ const products = [
     numReviews: 10,
   },
   {
-    _id: "6",
     name: "Women's leather slippers Bear loves honey",
     image: "/images/6.jpg",
     description:
