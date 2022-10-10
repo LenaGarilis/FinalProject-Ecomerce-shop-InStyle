@@ -71,6 +71,30 @@ const products = [
     rating: 4,
     numReviews: 12,
   },
+  {
+    name: "Women's leather slippers Bear loves honey",
+    image: "/images/7.jpg",
+    description:
+      "Cozy and soft house shoes will warm and cheer you up. Made from soft Italian leather, incredibly comfortable and weightless, silent, do not leave marks on the floor. Service life up to 5 years. This is your piece of art in the interior and a great gift.",
+    brand: "rxbshoes",
+    category: "Women's leather slippers",
+    price: 29.99,
+    countInStock: 0,
+    rating: 4,
+    numReviews: 12,
+  },
+  {
+    name: "Women's leather slippers Bear loves honey",
+    image: "/images/8.jpg",
+    description:
+      "Cozy and soft house shoes will warm and cheer you up. Made from soft Italian leather, incredibly comfortable and weightless, silent, do not leave marks on the floor. Service life up to 5 years. This is your piece of art in the interior and a great gift.",
+    brand: "rxbshoes",
+    category: "Women's leather slippers",
+    price: 29.99,
+    countInStock: 0,
+    rating: 4,
+    numReviews: 12,
+  },
 ];
 
 export default products;

@@ -1,32 +1,56 @@
-import React, { useState, useEffect } from "react";
-import { Row, Col } from "react-bootstrap";
-import axios from "axios";
+import { useEffect, useRef } from "react";
+import { Col, Row, Container } from "react-bootstrap";
 import Product from "../components/Product";
+import { useDispatch, useSelector } from "react-redux";
+import { listProducts } from "../features/productList/productListSlice";
+import Message from "../components/Message";
+import Loader from "../components/Loader";
+import Banner from "../components/Banner";
+import PaperCut from "../components/PaperCut/PaperCut";
 
-const MainPage = () => {
-  const [products, setProducts] = useState([]);
+function HomeScreen() {
+  const { isLoading, isError, products, message } = useSelector(
+    (state) => state.productList
+  );
+
+  const dispatch = useDispatch();
+  const effectRan = useRef(false);
 
   useEffect(() => {
-    const fetchProducts = async () => {
-      const { data } = await axios.get("/api/products");
-
-      setProducts(data);
-    };
-
-    fetchProducts();
-  }, []);
+    if (effectRan.current === false) {
+      dispatch(listProducts());
+      console.log("effect ran");
+      return () => {
+        effectRan.current = true;
+        console.log(`unmounted`);
+      };
+    }
+  }, [dispatch]);
 
   return (
     <div>
-      <Row>
-        {products.map((product) => (
-          <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
-            <Product product={product} />
-          </Col>
-        ))}
-      </Row>
+      <Banner />
+      <PaperCut />
+      <Container>
+        <div className="py-3">
+          {/* <h1>Latest Products</h1> */}
+          {isLoading ? (
+            <Loader />
+          ) : isError ? (
+            <Message>{message}</Message>
+          ) : (
+            <Row>
+              {products.map((product, i) => (
+                <Col key={i} sm={12} md={6} lg={4} xl={3}>
+                  <Product product={product} />
+                </Col>
+              ))}
+            </Row>
+          )}
+        </div>
+      </Container>
     </div>
   );
-};
+}
 
-export default MainPage;
+export default HomeScreen;

@@ -1,16 +1,15 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from 'react-bootstrap'
 
-const Footer = () => {
+function Footer() {
   return (
     <footer>
       <Container>
         <Row>
-          <Col className="text-center py-3">Copyright &copy; InStyle</Col>
+          <Col className="text-center py-3">Copyright &copy; eShop</Col>
         </Row>
       </Container>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

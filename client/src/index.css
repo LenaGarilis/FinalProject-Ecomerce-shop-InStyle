@@ -1,12 +1,13 @@
 main {
   min-height: 80vh;
 }
-.navbar {
-  margin-left: auto;
-}
+
 h3 {
   padding: 1rem 0;
 }
+
+/* Rating page */
+
 .rating span {
   margin: 0.1rem;
 }
