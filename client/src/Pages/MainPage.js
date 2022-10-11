@@ -7,6 +7,7 @@ import Message from "../components/Message";
 import Loader from "../components/Loader";
 import Banner from "../components/Banner";
 import PaperCut from "../components/PaperCut/PaperCut";
+import Carousel from "../components/Products-Carousel/Carousel";
 
 function HomeScreen() {
   const { isLoading, isError, products, message } = useSelector(
@@ -31,7 +32,7 @@ function HomeScreen() {
     <div>
       <Banner />
       <PaperCut />
-      <Container>
+      <Container className="products-container">
         <div className="py-3">
           {/* <h1>Latest Products</h1> */}
           {isLoading ? (
@@ -49,6 +50,7 @@ function HomeScreen() {
           )}
         </div>
       </Container>
+      <Carousel />
     </div>
   );
 }

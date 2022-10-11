@@ -12,8 +12,8 @@ h3 {
   width: 100vw;
   height: 60vh;
   background-size: cover;
-  position: fixed;
-  z-index: -1;
+  /* position: fixed; */
+  /* z-index: -1; */
 }
 
 /* Rating page */
