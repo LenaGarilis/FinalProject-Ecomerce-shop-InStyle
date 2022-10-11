@@ -17,7 +17,7 @@ function PaperCut() {
   );
   return (
     <div>
-      <Text value="PerfectMatch" />
+      <Text value="*slippers*" />
     </div>
   );
 }
