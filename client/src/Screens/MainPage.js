@@ -9,7 +9,7 @@ import Banner from "../components/Banner";
 import PaperCut from "../components/PaperCut/PaperCut";
 import Carousel from "../components/Products-Carousel/Carousel";
 import Offer from "../components/Offer";
-import Reviews from "../components/Reviews";
+import Reviews from "../components/Reviews/Reviews";
 
 function HomeScreen() {
   const { isLoading, isError, products, message } = useSelector(
@@ -33,30 +33,31 @@ function HomeScreen() {
   return (
     <div>
       <Banner />
-
       <PaperCut />
-      <Container className="products-container">
-        <div className="py-3">
-          {/* <h1>Latest Products</h1> */}
-          {isLoading ? (
-            <Loader />
-          ) : isError ? (
-            <Message>{message}</Message>
-          ) : (
-            <Row>
-              {products.map((product, i) => (
-                <Col key={i} sm={12} md={6} lg={4} xl={3}>
-                  <Product product={product} />
-                </Col>
-              ))}
-            </Row>
-          )}
-        </div>
-      </Container>
+      <div className="main-container">
+        <Container className="products-container">
+          <div className="py-3">
+            {/* <h1>Latest Products</h1> */}
+            {isLoading ? (
+              <Loader />
+            ) : isError ? (
+              <Message>{message}</Message>
+            ) : (
+              <Row>
+                {products.map((product, i) => (
+                  <Col key={i} sm={12} md={6} lg={4} xl={3}>
+                    <Product product={product} />
+                  </Col>
+                ))}
+              </Row>
+            )}
+          </div>
+        </Container>
 
-      <Carousel />
-      <Offer />
-      <Reviews />
+        <Carousel />
+        <Offer />
+        <Reviews />
+      </div>
     </div>
   );
 }

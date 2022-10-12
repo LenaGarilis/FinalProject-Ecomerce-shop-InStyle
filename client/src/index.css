@@ -5,6 +5,9 @@ main {
 h3 {
   padding: 1rem 0;
 }
+.main-container {
+  background-color: cornflowerblue;
+}
 /* Homepage */
 
 .banner-top {
@@ -28,6 +31,47 @@ h3 {
   margin-top: 55px;
 }
 
+/* Reviews */
+#testimonials {
+  padding: 100px 0;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 10px;
+}
+#testimonials i {
+  color: #e6e6e6;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.testimonial {
+  position: relative;
+  padding: 20px;
+}
+.testimonial-image {
+  float: left;
+  margin-right: 15px;
+}
+.testimonial-image,
+.testimonial-image img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.testimonial-content {
+  position: relative;
+  overflow: hidden;
+}
+.testimonial-content p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-style: italic;
+}
+.testimonial-meta {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+}
 .reviews-container {
   margin-top: 55px;
   margin-left: 15%;
