@@ -9,6 +9,7 @@ import Banner from "../components/Banner";
 import PaperCut from "../components/PaperCut/PaperCut";
 import Carousel from "../components/Products-Carousel/Carousel";
 import Offer from "../components/Offer";
+import Reviews from "../components/Reviews";
 
 function HomeScreen() {
   const { isLoading, isError, products, message } = useSelector(
@@ -55,6 +56,7 @@ function HomeScreen() {
 
       <Carousel />
       <Offer />
+      <Reviews />
     </div>
   );
 }
