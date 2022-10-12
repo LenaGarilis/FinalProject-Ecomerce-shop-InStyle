@@ -2,13 +2,13 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import HomeScreen from "./pages/MainPage";
-import ProductScreen from "./pages/ProductPage";
-import CartScreen from "./pages/CartPage";
-import LoginScreen from "./pages/LoginPage";
-import RegisterScreen from "./pages/RegisterPage";
-import ProfileScreen from "./pages/ProfilePage";
-import ShippingScreen from "./pages/ShippingPage";
+import HomeScreen from "./Screens/MainPage";
+import ProductScreen from "./Screens/ProductPage";
+import CartScreen from "./Screens/CartPage";
+import LoginScreen from "./Screens/LoginPage";
+import RegisterScreen from "./Screens/RegisterPage";
+import ProfileScreen from "./Screens/ProfilePage";
+import ShippingScreen from "./Screens/ShippingPage";
 
 const App = () => {
   return (
