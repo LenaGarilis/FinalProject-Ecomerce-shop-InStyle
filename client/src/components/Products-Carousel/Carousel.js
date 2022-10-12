@@ -13,7 +13,7 @@ export default function Carousel(props) {
     animateIn: "bounceInRight",
     animateOut: "bounceOutRight",
     dots: false,
-    autoplay: true,
+    autoplay: false,
     smartSpeed: 1000,
     responsive: {
       0: {
