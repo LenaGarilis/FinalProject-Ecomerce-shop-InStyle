@@ -8,10 +8,13 @@ h3 {
 /* Homepage */
 
 .banner-top {
+  margin-top: 750px;
   background-image: url(../public/images/banner.jpg);
   width: 100vw;
-  height: 60vh;
+  height: 100vh;
   background-size: cover;
+  background-position: center;
+
   position: fixed;
   z-index: -1;
 }
