@@ -31,6 +31,7 @@ function HomeScreen() {
   return (
     <div>
       <Banner />
+
       <PaperCut />
       <Container className="products-container">
         <div className="py-3">
@@ -50,6 +51,7 @@ function HomeScreen() {
           )}
         </div>
       </Container>
+
       <Carousel />
     </div>
   );
