@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Button, Card, Container } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 
 const Offer = () => {
   return (
@@ -14,7 +15,9 @@ const Offer = () => {
               With supporting text below as a natural lead-in to additional
               content.
             </Card.Text>
-            <Button variant="primary">Go somewhere</Button>
+            <NavLink to="/offer">
+              <Button variant="primary">Choose Design</Button>
+            </NavLink>
           </Card.Body>
           <Card.Footer className="text-muted">2 days ago</Card.Footer>
         </Card>
