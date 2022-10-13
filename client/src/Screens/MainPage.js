@@ -6,12 +6,13 @@ import { listProducts } from "../features/productList/productListSlice";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
 import Banner from "../components/Banner";
-import PaperCut from "../components/PaperCut/PaperCut";
+import PaperCutSlippers from "../components/PaperCutSlippers/PaperCutSlippers";
+import PaperCutBlouses from "../components/PaperCutBlouses/PaperCutBlouses";
 import Carousel from "../components/Products-Carousel/Carousel";
 import Offer from "../components/Offer";
 import Reviews from "../components/Reviews/Reviews";
 
-function HomeScreen() {
+function HomeScreen(props) {
   const { isLoading, isError, products, message } = useSelector(
     (state) => state.productList
   );
@@ -33,7 +34,7 @@ function HomeScreen() {
   return (
     <div>
       <Banner />
-      <PaperCut />
+      <PaperCutSlippers />
       <div className="main-container">
         <Container className="products-container">
           <div className="py-3">
@@ -56,6 +57,7 @@ function HomeScreen() {
 
         <Carousel />
         <Offer />
+        <PaperCutBlouses />
         <Reviews />
       </div>
     </div>
