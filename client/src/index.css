@@ -23,7 +23,10 @@ h3 {
   );
 }
 
-/* Homepage */
+/* Mainpage */
+.mainPage-top {
+  margin-top: 47rem;
+}
 
 .banner-top {
   background-image: url(../public/images/banner.jpg);

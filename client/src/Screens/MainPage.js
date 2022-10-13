@@ -6,8 +6,8 @@ import { listProducts } from "../features/productList/productListSlice";
 import Message from "../components/Message";
 import Loader from "../components/Loader";
 import Banner from "../components/Banner";
-import PaperCutSlippers from "../components/PaperCutSlippers/PaperCutSlippers";
-import PaperCutBlouses from "../components/PaperCutBlouses/PaperCutBlouses";
+import PaperCut from "../components/PaperCut/PaperCut";
+
 import Carousel from "../components/Products-Carousel/Carousel";
 import Offer from "../components/Offer";
 import Reviews from "../components/Reviews/Reviews";
@@ -34,31 +34,33 @@ function HomeScreen(props) {
   return (
     <div>
       <Banner />
-      <PaperCutSlippers />
-      <div className="main-container">
-        <Container className="products-container">
-          <div className="py-3">
-            {/* <h1>Latest Products</h1> */}
-            {isLoading ? (
-              <Loader />
-            ) : isError ? (
-              <Message>{message}</Message>
-            ) : (
-              <Row>
-                {products.map((product, i) => (
-                  <Col key={i} sm={12} md={6} lg={4} xl={3}>
-                    <Product product={product} />
-                  </Col>
-                ))}
-              </Row>
-            )}
-          </div>
-        </Container>
+      <div className="mainPage-top">
+        <PaperCut value="*slippers*" />
+        <div className="main-container">
+          <Container className="products-container">
+            <div className="py-3">
+              {/* <h1>Latest Products</h1> */}
+              {isLoading ? (
+                <Loader />
+              ) : isError ? (
+                <Message>{message}</Message>
+              ) : (
+                <Row>
+                  {products.map((product, i) => (
+                    <Col key={i} sm={12} md={6} lg={4} xl={3}>
+                      <Product product={product} />
+                    </Col>
+                  ))}
+                </Row>
+              )}
+            </div>
+          </Container>
 
-        <Carousel />
-        <Offer />
-        <PaperCutBlouses />
-        <Reviews />
+          <Carousel />
+          <Offer />
+          <PaperCut value="*blouses*" />
+          <Reviews />
+        </div>
       </div>
     </div>
   );
