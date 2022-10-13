@@ -1,9 +1,9 @@
 import React from "react";
-import "./papercutSlippers.scss";
+import "./papercut.scss";
 
-function PaperCutSlippers() {
-  const Text = ({ value }) => (
-    <div className="banner-heading-s">
+function PaperCut({ value }) {
+  return (
+    <div className="banner-heading-b">
       <div className="text-banner">
         {value.split("").map((char, i) => (
           <div className="letter" style={{ "--delay": `${i * 0.2}s` }}>
@@ -15,11 +15,6 @@ function PaperCutSlippers() {
       </div>
     </div>
   );
-  return (
-    <div>
-      <Text value="*slippers*" />
-    </div>
-  );
 }
 
-export default PaperCutSlippers;
+export default PaperCut;
