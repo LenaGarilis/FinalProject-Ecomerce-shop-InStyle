@@ -7,7 +7,7 @@ function Reviews(props) {
     <Container className="py-3">
       <div id="testimonials">
         <div className="container">
-          <div className="section-title text-center">
+          <div className=" text-center">
             <h2>CRITIC REVIEWS</h2>
           </div>
           <div className="row">

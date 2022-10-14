@@ -10,6 +10,7 @@ import PaperCut from "../components/PaperCut/PaperCut";
 import Carousel from "../components/Products-Carousel/Carousel";
 import Offer from "../components/Offer";
 import Reviews from "../components/Reviews/Reviews";
+import Blouses from "../components/Blouses/Blouses";
 function HomeScreen(props) {
   const { isLoading, isError, products, message } = useSelector(
     (state) => state.productList
@@ -53,6 +54,7 @@ function HomeScreen(props) {
           <Carousel />
           <Offer />
           <PaperCut value="*blouses*" />
+          <Blouses />
           <Reviews />
         </div>
       </div>
