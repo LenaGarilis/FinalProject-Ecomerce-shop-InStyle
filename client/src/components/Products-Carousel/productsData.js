@@ -1,19 +1,19 @@
 const data = [
   {
     id: 1,
-    image: "/images/products-carousel/shoes.jpg",
+    image: "/images/products-carousel/shoes-2.jpg",
   },
   {
     id: 2,
-    image: "/images/products-carousel/shoes-3.jpg",
+    image: "/images/products-carousel/shoes-10.jpg",
   },
   {
     id: 3,
-    image: "/images/products-carousel/shoes-4.jpg",
+    image: "/images/products-carousel/shoes-3.jpg",
   },
   {
     id: 4,
-    image: "/images/products-carousel/shoes-5.jpg",
+    image: "/images/products-carousel/shoes7.gif",
   },
   {
     id: 5,
@@ -33,7 +33,7 @@ const data = [
   },
   {
     id: 9,
-    image: "/images/products-carousel/shoes-10.jpg",
+    image: "/images/products-carousel/shoes-4.jpg",
   },
   {
     id: 10,
@@ -41,7 +41,7 @@ const data = [
   },
   {
     id: 11,
-    image: "/images/products-carousel/shoes-2.jpg",
+    image: "/images/products-carousel/shoes.jpg",
   },
 ];
 
