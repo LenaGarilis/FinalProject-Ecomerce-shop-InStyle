@@ -12,4 +12,3 @@ const connecDB = async () => {
 };
 
 export default connecDB;
-//kkkk

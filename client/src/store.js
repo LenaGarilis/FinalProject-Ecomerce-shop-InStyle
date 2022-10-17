@@ -8,9 +8,9 @@ import UserProfileSlice from "./features/user/UserDetailSlice";
 import UpdateUserProfileSlice from "./features/user/UpdateUserDetails";
 import UserDeleteSlice from "./features/user/UserDeleteSlice";
 import UserUpdateSlice from "./features/user/UserUpdateSlice";
-import orderCreateSlice from "./features/order/orderReducer";
 import shippingSlice from "./features/shippingReducer";
 import paymentSlice from "./features/paymentReducer";
+import orderCreateSlice from "./features/order/orderReducer";
 
 export const store = configureStore({
   reducer: {
@@ -26,5 +26,6 @@ export const store = configureStore({
     createdOrder: orderCreateSlice,
     payment: paymentSlice,
     shipping: shippingSlice,
+    createdOrder: orderCreateSlice,
   },
 });
