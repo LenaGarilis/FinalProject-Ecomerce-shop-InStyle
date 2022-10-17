@@ -53,7 +53,7 @@ const PlaceOrderScreen = () => {
     dispatch(removeFromCart(id));
   };
 
-  const placeOrdreHandler = () => {
+  const placeOrderHandler = () => {
     dispatch(
       createOrder({
         orderItems: cart.cartItems,
@@ -92,8 +92,8 @@ const PlaceOrderScreen = () => {
                 <ListGroup.Item>
                   <h3>Shipping</h3>
                   <p>
-                    {Shipping.address},{Shipping.postalCode},{Shipping.city},
-                    {Shipping.country}
+                    {`${Shipping.address}, ${Shipping.postalCode}, ${Shipping.city},
+                    ${Shipping.country}`}
                   </p>
                 </ListGroup.Item>
                 <ListGroup.Item>
@@ -111,7 +111,7 @@ const PlaceOrderScreen = () => {
                     {cart.cartItems.map((product) => (
                       <ListGroup.Item key={product._id}>
                         <Row>
-                          <Col md={1}>
+                          <Col md={2}>
                             <Image
                               src={product.image}
                               alt={product.name}
@@ -127,12 +127,12 @@ const PlaceOrderScreen = () => {
                             </Link>
                           </Col>
                           <Col>
-                            {product.qty} x ${product.price} = $
+                            {product.qty} x €{product.price} = €
                             {product.qty * product.price}
                           </Col>
-                          <Col>
+                          {/* <Col>
                             <Button variant="light" type="button"></Button>
-                          </Col>
+                          </Col> */}
                           {confirmedOrder.status !== "SUCCESS" && (
                             <Col>
                               <Button
@@ -162,34 +162,34 @@ const PlaceOrderScreen = () => {
                   <ListGroup.Item>
                     <Row>
                       <Col>Items</Col>
-                      <Col>${itemsPrice}</Col>
+                      <Col>€{itemsPrice}</Col>
                     </Row>
                   </ListGroup.Item>
                   <ListGroup.Item>
                     <Row>
                       <Col>Shipping</Col>
-                      <Col>{shippingPrice}</Col>
+                      <Col>€{shippingPrice}</Col>
                     </Row>
                   </ListGroup.Item>
                   <ListGroup.Item>
                     <Row>
                       <Col>Tax</Col>
-                      <Col>{taxPrice}</Col>
+                      <Col>€{taxPrice}</Col>
                     </Row>
                   </ListGroup.Item>
                   <ListGroup.Item>
                     <Row>
                       <Col>Total</Col>
-                      <Col>{totalPrice}</Col>
+                      <Col>€{totalPrice}</Col>
                     </Row>
                   </ListGroup.Item>
 
-                  <div className="d-grid gap-2">
+                  <div className="d-grid gap-2 py-2 px-1">
                     <Button
                       type="button"
                       variant="primary"
                       className="btn-block"
-                      onClick={placeOrdreHandler}
+                      onClick={placeOrderHandler}
                       disabled={
                         cart.cartItems.length === 0 ||
                         confirmedOrder.status === "SUCCESS"
@@ -199,7 +199,7 @@ const PlaceOrderScreen = () => {
                     </Button>
                   </div>
                   {confirmedOrder.status === "SUCCESS" && (
-                    <div className="d-grid py-2 gap-2">
+                    <div className="d-grid py-2 gap-2 px-1">
                       <Button
                         type="button"
                         variant="primary"
