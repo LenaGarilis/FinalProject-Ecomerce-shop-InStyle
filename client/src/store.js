@@ -11,21 +11,22 @@ import UserUpdateSlice from "./features/user/UserUpdateSlice";
 import shippingSlice from "./features/shippingReducer";
 import paymentSlice from "./features/paymentReducer";
 import orderCreateSlice from "./features/order/orderReducer";
+import OrderDetailSlice from "./features/order/orderDetailReducer";
 
 export const store = configureStore({
   reducer: {
     productList: productListReducer,
     productDetails: productDetailsReducer,
     cart: cartReducer,
-    userdelete: UserDeleteSlice,
     userLogin: UserLoginSlice,
     userRegister: UserRegisterSlice,
     userProfile: UserProfileSlice,
     updateUserProfile: UpdateUserProfileSlice,
+    userdelete: UserDeleteSlice,
     userUpdate: UserUpdateSlice,
-    createdOrder: orderCreateSlice,
-    payment: paymentSlice,
     shipping: shippingSlice,
+    payment: paymentSlice,
     createdOrder: orderCreateSlice,
+    viewOrderDetail: OrderDetailSlice,
   },
 });
