@@ -34,7 +34,7 @@ h3 {
 .banner-top {
   background-image: url(../public/images/banner.jpg);
   width: 100vw;
-  height: 60vh;
+  height: 60%;
   background-size: cover;
   background-position: center;
   position: fixed;

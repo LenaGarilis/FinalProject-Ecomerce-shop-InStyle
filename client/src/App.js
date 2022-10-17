@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Container } from "react-bootstrap";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomeScreen from "./Screens/MainPage";
@@ -9,6 +8,7 @@ import LoginScreen from "./Screens/LoginPage";
 import RegisterScreen from "./Screens/RegisterPage";
 import ProfileScreen from "./Screens/ProfilePage";
 import ShippingScreen from "./Screens/ShippingPage";
+import PaymentPage from "./Screens/PaymentPage";
 import OfferPage from "./Screens/OfferPage";
 
 const App = () => {
@@ -27,6 +27,7 @@ const App = () => {
           <Route path="/cart/:id" element={<CartScreen />} />
           <Route path="/cart" element={<CartScreen />} />
           <Route path="/offer" element={<OfferPage />} />
+          <Route path="/payment" element={<PaymentPage />} />
         </Routes>
       </main>
       <Footer />

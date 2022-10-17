@@ -1,27 +1,23 @@
-import { useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 import { Form, Button, Container } from "react-bootstrap";
-import { useDispatch, useSelector } from "react-redux";
 import FormContainer from "../components/FormContainer";
 import CheckoutSteps from "../components/CheckoutSteps";
-import { saveShippingAddress } from "../features/cart/cartSlice";
+import { registerShipping } from "../features/shippingReducer";
 
-function ShippingScreen() {
-  const { shippingAddress } = useSelector((state) => state.cart);
+const ShippingScreen = () => {
+  const [address, setAddress] = useState("");
+  const [city, setCity] = useState("");
+  const [postalCode, setPostalCode] = useState();
+  const [country, setCountry] = useState("");
 
-  const [address, setAddress] = useState(shippingAddress.address);
-  const [city, setCity] = useState(shippingAddress.city);
-  const [postalCode, setPostalCode] = useState(shippingAddress.postalCode);
-  const [country, setCountry] = useState(shippingAddress.country);
-
-  const location = useLocation();
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const submitHandler = (e) => {
     e.preventDefault();
-
-    dispatch(saveShippingAddress({ address, city, postalCode, country }));
+    dispatch(registerShipping({ address, city, postalCode, country }));
     navigate("/payment");
   };
 
@@ -30,6 +26,7 @@ function ShippingScreen() {
       <div className="py-3">
         <FormContainer>
           <CheckoutSteps step1 step2 />
+
           <h1>Shipping</h1>
           <Form onSubmit={submitHandler}>
             <Form.Group controlId="address">
@@ -58,7 +55,7 @@ function ShippingScreen() {
               <Form.Label>Postal Code</Form.Label>
               <Form.Control
                 type="text"
-                placeholder="Enter postalCode"
+                placeholder="Enter postal code"
                 value={postalCode}
                 required
                 onChange={(e) => setPostalCode(e.target.value)}
@@ -76,14 +73,16 @@ function ShippingScreen() {
               ></Form.Control>
             </Form.Group>
 
-            <Button type="submit" variant="primary">
-              Continue
-            </Button>
+            <div className="d-grid gap-2 mt-2">
+              <Button type="submit" variant="primary">
+                Continue
+              </Button>
+            </div>
           </Form>
         </FormContainer>
       </div>
     </Container>
   );
-}
+};
 
 export default ShippingScreen;
