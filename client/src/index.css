@@ -97,3 +97,20 @@ h3 {
   margin-left: 15%;
   margin-right: 15%;
 }
+.footer-bg {
+  background-image: linear-gradient(
+    to left,
+    #e83283,
+    #d83f99,
+    #c34dab,
+    #aa59b8,
+    #8f63c0,
+    #7d70cb,
+    #6a7cd3,
+    #5586d8,
+    #4698e5,
+    #38aaee,
+    #32baf6,
+    #39cbfb
+  );
+}
