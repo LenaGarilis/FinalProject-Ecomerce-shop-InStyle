@@ -17,6 +17,11 @@ import { addToCart, addQty } from "../features/cart/cartSlice";
 import Rating from "../components/Rating";
 import Loader from "../components/Loader";
 import Message from "../components/Message";
+// import Nav from "react-bootstrap/Nav";
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
+import Sonnet from "../components/Sonnet2";
+import Sonnet2 from "../components/Sonnet";
 
 function ProductScreen() {
   const { product, isLoading, isError, message } = useSelector(
@@ -145,6 +150,21 @@ function ProductScreen() {
               </Col>
             </Row>
           )}
+          <Tabs
+            defaultActiveKey="profile"
+            id="uncontrolled-tab-example"
+            className=" mb-3  py-4 "
+          >
+            <Tab eventKey="home" title="About This Product">
+              <Sonnet />
+            </Tab>
+            <Tab eventKey="profile" title="About This Shop">
+              <Sonnet2 />
+            </Tab>
+            <Tab eventKey="contact" title="About Us" disabled>
+              <Sonnet />
+            </Tab>
+          </Tabs>
         </div>
       </Container>
     </>
