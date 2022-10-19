@@ -7,9 +7,7 @@ function Reviews(props) {
     <Container className="py-3">
       <div id="testimonials">
         <div className="container">
-          <div className=" text-center">
-            <h2>CRITIC REVIEWS</h2>
-          </div>
+          <div className=" text-center"></div>
           <div className="row">
             {reviews.map(({ id, img, text, name }) => (
               <div key={id} className="col-md-4">
