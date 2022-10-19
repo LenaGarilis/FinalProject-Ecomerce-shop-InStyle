@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Form, Button, Row, Col, Container, Alert } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import Message from "../components/Message";
@@ -80,12 +80,12 @@ const Profile = () => {
 
               {error && <Message variant="danger">{error}</Message>}
 
-              <h2>My Profile</h2>
+              <h3 className="text-center">My Profile</h3>
               <Form
                 onSubmit={submitHandler}
                 style={{ textAlign: "left", fontWeight: "900" }}
               >
-                <Form.Group controlId="name">
+                <Form.Group controlId="name" className="mb-2">
                   <Form.Label>Name</Form.Label>
                   <Form.Control
                     type="name"
@@ -94,7 +94,7 @@ const Profile = () => {
                   ></Form.Control>
                 </Form.Group>
 
-                <Form.Group controlId="email">
+                <Form.Group controlId="email" className="mb-2">
                   <Form.Label>Email Address</Form.Label>
                   <Form.Control
                     type="email"
@@ -102,7 +102,7 @@ const Profile = () => {
                     onChange={(e) => setEmail(e.target.value)}
                   ></Form.Control>
                 </Form.Group>
-                <Form.Group id="password">
+                <Form.Group id="password" className="mb-2">
                   <Form.Label>Password</Form.Label>
                   <Form.Control
                     type="password"
@@ -110,7 +110,7 @@ const Profile = () => {
                     onChange={(e) => setPassword(e.target.value)}
                   ></Form.Control>
                 </Form.Group>
-                <Form.Group id="confirmPassword">
+                <Form.Group id="confirmPassword" className="mb-3">
                   <Form.Label>Confirm Password</Form.Label>
                   <Form.Control
                     type="password"

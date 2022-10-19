@@ -42,7 +42,8 @@ const createOrder = (newOrder) => async (dispatch, getState) => {
     };
 
     const { data } = await axios.post("/api/orders", newOrder, config);
-
+    console.log(newOrder);
+    console.log(data);
     dispatch(ORDER_CREATE_SUCCESS(data));
 
     localStorage.setItem("order", JSON.stringify(data));

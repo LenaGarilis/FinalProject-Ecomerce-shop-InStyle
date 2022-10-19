@@ -1,6 +1,6 @@
-import { Card } from 'react-bootstrap'
-import Rating from './Rating'
-import { Link } from 'react-router-dom'
+import { Card } from "react-bootstrap";
+import Rating from "./Rating";
+import { Link } from "react-router-dom";
 
 function Product({ product }) {
   return (
@@ -26,7 +26,7 @@ function Product({ product }) {
         <Card.Text as="h3">€{product.price}</Card.Text>
       </Card.Body>
     </Card>
-  )
+  );
 }
 
-export default Product
+export default Product;
