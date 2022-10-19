@@ -14,6 +14,7 @@ const orderCreate = asyncHandler(async (req, res) => {
     shippingPrice,
     totalPrice,
   } = req.body;
+  //console.log(req.body);
 
   if (orderItems && orderItems.length === 0) {
     res.status(400);
@@ -30,9 +31,9 @@ const orderCreate = asyncHandler(async (req, res) => {
       shippingPrice,
       totalPrice,
     });
-
+    console.log(newOrder);
     const createdOrder = await newOrder.save();
-
+    console.log(createdOrder);
     res.status(201).json(createdOrder);
   }
 });
