@@ -6,7 +6,7 @@ import generateToken from "../utils/jsonwebtoken.js";
 //POST method, User register, api/users/
 
 const registerUser = asyncHandler(async (req, res) => {
-  const { name, email, password } = req.body;
+  const { name, email, password } = req.body
 
   const userExist = await User.findOne({ email });
 
