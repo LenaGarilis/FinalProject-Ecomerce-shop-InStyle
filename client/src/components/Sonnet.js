@@ -19,7 +19,7 @@ function Sonnet() {
               you to become a collector! Subscribe to our page VKontakte, follow
               the news and special offers.
             </p>
-            <p>
+            <p variant="success">
               If you do not like the purchased item, and you would like to
               return or exchange it, please let us know by phone or email within
               14 days from the date of receipt of the order (no later). A

@@ -153,7 +153,7 @@ function ProductScreen() {
           <Tabs
             defaultActiveKey="profile"
             id="uncontrolled-tab-example"
-            className=" mb-3  py-4 "
+            className=" mb-1  py-3 "
           >
             <Tab eventKey="home" title="About This Product">
               <Sonnet />
