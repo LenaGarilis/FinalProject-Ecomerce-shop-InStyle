@@ -17,6 +17,11 @@ const users = [
     email: "korneli@mail.com",
     password: bcrypt.hashSync("123456", 10),
   },
+  {
+    name: "Hudir",
+    email: "hudir@123.com",
+    password: bcrypt.hashSync("123456", 10),
+  },
 ];
 
 export default users;
