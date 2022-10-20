@@ -9,7 +9,7 @@ function OfferOrderSteps() {
         <div className="py-3" id="offer">
           <Card>
             <Card.Header className="text-center">
-              <h3>Custom Design Your Own Sneakers - Only $49.95</h3>
+              <h3>Custom Design Your Own Sneakers - Only $89</h3>
             </Card.Header>
 
             <CardGroup>

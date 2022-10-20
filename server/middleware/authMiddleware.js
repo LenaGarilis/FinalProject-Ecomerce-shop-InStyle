@@ -3,6 +3,7 @@ import expressAsyncHandler from "express-async-handler";
 import { User } from "../models/userModel.js";
 
 const protect = expressAsyncHandler(async (req, res, next) => {
+  console.log(req.headers.authorization)
   let token;
   if (
     req.headers.authorization &&

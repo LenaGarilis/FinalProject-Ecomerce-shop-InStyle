@@ -45,7 +45,20 @@ const Profile = () => {
       setName(user.name);
       setEmail(user.email);
     }
-  }, [dispatch, navigate, userInfo, user.name, user, status]);
+  }, [status,  userInfo, dispatch, navigate]); // dispatch navigate user.name userInfo,  user, status
+  // first test, if we watch [status,  user], it will bug
+  console.log(user)  
+  // add another useEffect to fill the input. new probleme is after submit , if you login and go to profile, will logout, here we need clear status
+  useEffect(()=> {
+    console.log(status) // => UPDATE_USER_PROFILE_SUCCESS how to clear it ?
+    
+    setName(userInfo.name);
+    setEmail(userInfo.email);
+  }, [])
+
+
+
+
 
   const submitHandler = (e) => {
     e.preventDefault();
