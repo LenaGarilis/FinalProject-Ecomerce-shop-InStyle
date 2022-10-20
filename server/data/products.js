@@ -3,7 +3,7 @@ const products = [
     name: "Women's leather slippers Bear loves honey",
     image: "/images/slippers/1.jpg",
     description:
-      "Take them with you on your travels and create the comfort of home wherever you are. And of course it's the perfect gift!",
+      "Take them with you on your travels and create the comfort of home wherever you are. And of course it’s the perfect gift!",
     brand: "rxbshoes",
     category: "Women's leather slippers",
     price: 29.99,
@@ -15,7 +15,7 @@ const products = [
     name: "Women's leather slippers Bear loves honey",
     image: "/images/slippers/2.jpg",
     description:
-      "Take them with you on your travels and create the comfort of home wherever you are. And of course it's the perfect gift!",
+      "Take them with you on your travels and create the comfort of home wherever you are. And of course it’s the perfect gift!",
     brand: "rxbshoes",
     category: "Women's leather slippers",
     price: 29.99,
@@ -27,7 +27,7 @@ const products = [
     name: "Women's leather slippers Bear loves honey",
     image: "/images/slippers/3.jpg",
     description:
-      "Take them with you on your travels and create the comfort of home wherever you are. And of course it's the perfect gift!",
+      "Take them with you on your travels and create the comfort of home wherever you are. And of course it’s the perfect gift!",
     brand: "rxbshoes",
     category: "Women's leather slippers",
     price: 49.99,
@@ -39,7 +39,7 @@ const products = [
     name: "Women's leather slippers Bear loves honey",
     image: "/images/slippers/4.jpg",
     description:
-      "Take them with you on your travels and create the comfort of home wherever you are. And of course it's the perfect gift!",
+      "Take them with you on your travels and create the comfort of home wherever you are. And of course it’s the perfect gift!",
     brand: "rxbshoes",
     category: "Women's leather slipperss",
     price: 29.99,
