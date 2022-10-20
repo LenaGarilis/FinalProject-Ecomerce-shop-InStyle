@@ -26,7 +26,7 @@ const reviewsdata = [
   {
     id: 5,
     img: "images/testimonials/05.jpg",
-    text: '"Indeed, not just slippers, but works of art! This collection is beautiful and life-affirming! "',
+    text: '"Indeed, not just slippers, but works of art! This collection is beautiful and life-affirming!!! "',
     name: "Emjo Basshe",
   },
   {
