@@ -34,7 +34,7 @@ function Footer() {
           <hr />
           <p className="mb-0">
             This e-commerce page is a joint final project of 3 graduates of the
-            DSI school, the faculty of WEB DEVELOPMENT. This is our first joint
+            DCI school, the faculty of WEB DEVELOPMENT. This is our first joint
             page development experience. We really hope that you enjoyed our
             presentation. Thank you for your visit!!!
           </p>

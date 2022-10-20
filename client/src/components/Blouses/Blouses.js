@@ -10,9 +10,9 @@ function Blouses(props) {
       {/* <div id="portfolio" className="text-center"> */}
       <div className="section-title">
         <p className=" text-center">
-          Beautiful blouses by Russian designer Roma Uvarov will soon appear in
-          our store, if you want to receive a message about their availability,
-          please{" "}
+          Beautiful blouses by Russian designer Roma Uvarov will appear in our
+          store very soon, if you want to receive a message about their
+          availability, please{" "}
           <Alert.Link href="http://localhost:3000/register?redirect=/">
             register
           </Alert.Link>{" "}
