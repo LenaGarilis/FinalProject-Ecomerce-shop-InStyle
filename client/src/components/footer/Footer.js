@@ -33,9 +33,10 @@ function Footer() {
 
           <hr />
           <p className="mb-0">
-            Professors, assistants and students work together in an atmosphere
-            of mutual trust and respect. The contribution of each individual
-            contributes to the success of the institution as a whole.
+            This e-commerce page is a joint final project of 3 graduates of the
+            DSI school, the faculty of WEB DEVELOPMENT. This is our first joint
+            page development experience. We really hope that you enjoyed our
+            presentation. Thank you for your visit!!!
           </p>
         </Alert>
       </div>

@@ -2,6 +2,7 @@ import React from "react";
 import blousesdata from "./blousesdata.js";
 import "./blouses.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
+import Alert from "react-bootstrap/Alert";
 
 function Blouses(props) {
   return (
@@ -9,11 +10,13 @@ function Blouses(props) {
       {/* <div id="portfolio" className="text-center"> */}
       <div className="section-title">
         <p className=" text-center">
-          Exhibiting a decidedly Marxist aesthetic, the film contains neither
-          lead actors nor plot structure. It is merely an account of the crazy
-          adventures of an artist (man/filmmaker) who is hell-bent on exploring
-          the possibilities that come with a newly discovered medium of art
-          (camera/film).
+          Beautiful blouses by Russian designer Roma Uvarov will soon appear in
+          our store, if you want to receive a message about their availability,
+          please{" "}
+          <Alert.Link href="http://localhost:3000/register?redirect=/">
+            register
+          </Alert.Link>{" "}
+          on the site. We will send you a notification by email. Thanks!!!
         </p>
       </div>
 
