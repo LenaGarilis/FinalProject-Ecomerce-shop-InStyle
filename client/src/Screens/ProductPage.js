@@ -22,6 +22,7 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import Sonnet from "../components/Sonnet2";
 import Sonnet2 from "../components/Sonnet";
+import Buyme from "../components/BuymeCard/Buyme";
 
 function ProductScreen() {
   const { product, isLoading, isError, message } = useSelector(
@@ -167,6 +168,7 @@ function ProductScreen() {
           </Tabs>
         </div>
       </Container>
+      <Buyme />
     </>
   );
 }
