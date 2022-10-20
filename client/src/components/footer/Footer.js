@@ -40,7 +40,7 @@ function Footer() {
         </Alert>
       </div>
       <Container className="  py-3 pd-3 ">
-        <Row>
+        <Row xs={1} md={3} className="g-4">
           <Col>
             <Accordion defaultActiveKey="0">
               <Accordion.Item eventKey="0">
@@ -119,7 +119,8 @@ function Footer() {
           </Col>
 
           <Col>
-            <Card border="warning" style={{ width: "26rem" }}>
+            {/* style={{ width: "26rem" }} */}
+            <Card border="warning">
               <Card.Header>
                 {" "}
                 <strong>DCI - Digital Career Institute</strong>

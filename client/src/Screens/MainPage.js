@@ -8,7 +8,7 @@ import Loader from "../components/Loader";
 import Banner from "../components/Banner";
 import PaperCut from "../components/PaperCut/PaperCut";
 import Carousel from "../components/Products-Carousel/Carousel";
-import Offer from "../components/Offer";
+import Offer from "../components/OfferMainPage";
 import Reviews from "../components/Reviews/Reviews";
 import Blouses from "../components/Blouses/Blouses";
 function HomeScreen(props) {

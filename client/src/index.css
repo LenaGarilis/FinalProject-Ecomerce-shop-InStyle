@@ -8,6 +8,9 @@ main {
 h3 {
   padding: 1rem 0;
 }
+a {
+  text-decoration: none;
+}
 .main-container {
   background-image: linear-gradient(
     to left,
@@ -50,7 +53,7 @@ h3 {
 .offer-section {
   margin-top: 55px;
 }
-/* Offer page */
+/* Offer page components - OfferPageDescription */
 
 #offer img {
   height: 520px;
@@ -63,6 +66,20 @@ h3 {
   justify-content: space-around;
   align-items: center;
   margin-top: 40px;
+}
+.card-group {
+  gap: 0;
+}
+.step-card-first {
+  color: rgb(67, 67, 67);
+}
+.step-card-third {
+  color: rgb(67, 67, 67);
+  background-color: rgba(255, 242, 204);
+  border-radius: 10px;
+}
+.submit-design-button {
+  background-color: rgba(255, 242, 204);
 }
 
 /* OrderDesignForm */

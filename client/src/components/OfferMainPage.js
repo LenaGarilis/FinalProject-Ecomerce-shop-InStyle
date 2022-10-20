@@ -22,7 +22,7 @@ const Offer = () => {
             </NavLink>
           </Card.Body>
           <Card.Footer className="text-muted">
-            Your order will be ready within 7 days
+            Final version of the design will be ready within 7 days
           </Card.Footer>
         </Card>
       </Container>
