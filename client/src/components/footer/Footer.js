@@ -75,7 +75,7 @@ function Footer() {
               </Accordion.Item>
               <Accordion.Item eventKey="2">
                 <Accordion.Header>
-                  <strong> ZHUO YANG - Back End Developer</strong>
+                  <strong> ZHUO YANG - Back End Mentor</strong>
                 </Accordion.Header>
                 <Accordion.Body>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed

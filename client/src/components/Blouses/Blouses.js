@@ -8,7 +8,7 @@ function Blouses(props) {
     <Container className="pb-3">
       {/* <div id="portfolio" className="text-center"> */}
       <div className="section-title">
-        <p>
+        <p className=" text-center">
           Exhibiting a decidedly Marxist aesthetic, the film contains neither
           lead actors nor plot structure. It is merely an account of the crazy
           adventures of an artist (man/filmmaker) who is hell-bent on exploring
