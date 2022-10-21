@@ -22,6 +22,7 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import Sonnet from "../components/Sonnet2";
 import Sonnet2 from "../components/Sonnet";
+import Sonnet3 from "../components/Sonnet3";
 import Buyme from "../components/BuymeCard/Buyme";
 
 function ProductScreen() {
@@ -162,8 +163,8 @@ function ProductScreen() {
             <Tab eventKey="profile" title="About This Shop">
               <Sonnet2 />
             </Tab>
-            <Tab eventKey="contact" title="About Us" disabled>
-              <Sonnet />
+            <Tab eventKey="contact" title="Special Offer">
+              <Sonnet3 />
             </Tab>
           </Tabs>
         </div>
