@@ -18,8 +18,8 @@ function Buyme(props) {
               <div className="hover-bg1">
                 <a href={id} title={title} data-lightbox-gallery="gallery1">
                   <div className="hover-text1">
-                    <h4>{title}</h4>
-                    <h4>{name}</h4>
+                    <h4 className="font-logo1">{title}</h4>
+                    <h4 className="font-logo1">{name}</h4>
                     <h4>€{price}</h4>
                   </div>
                   <img

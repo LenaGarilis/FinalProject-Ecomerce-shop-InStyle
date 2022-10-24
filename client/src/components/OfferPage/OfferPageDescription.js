@@ -7,9 +7,6 @@ function OfferPageDescription() {
     <div>
       <Container>
         <div className="py-3" id="offer">
-          <Link className="btn btn-light my-3" to="/">
-            Go Back
-          </Link>
           <Card>
             <Card.Body>
               <Card.Header className="text-center">

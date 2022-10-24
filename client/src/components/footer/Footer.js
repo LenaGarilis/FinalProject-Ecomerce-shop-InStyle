@@ -64,14 +64,27 @@ function Footer() {
                   <strong> KORNELI NASTAS - Frond End Developer</strong>
                 </Accordion.Header>
                 <Accordion.Body>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  {" "}
+                  <p>
+                    Frond End Web Developer based in Hamburg. Understanding UI
+                    and UX design principles came naturally due to my
+                    photography background.
+                  </p>
+                  <p>
+                    I noticed that my heart beats for Frontend throughout my
+                    journey, so I focused on HTML, CSS, JS and React. Do you
+                    think we should work together?
+                  </p>
+                  <Card.Link href="https://www.linkedin.com/in/korneli-nastas-0b1249170/">
+                    <Button size="sm" variant="success">
+                      LinkedIn
+                    </Button>{" "}
+                  </Card.Link>
+                  <Card.Link href="https://github.com/korneli1970">
+                    <Button size="sm" variant="info">
+                      GitHub
+                    </Button>{" "}
+                  </Card.Link>
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="2">

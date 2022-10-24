@@ -31,11 +31,10 @@ function HomeScreen(props) {
     <div>
       <Banner />
       <div className="mainPage-top">
-        <PaperCut value="*slippers*" />
         <div className="main-container">
           <Container className="products-container">
-            <div className="py-3">
-              {/* <h1>Latest Products</h1> */}
+            <div className="">
+              <PaperCut value="*slippers*" />
               {isLoading ? (
                 <Loader />
               ) : isError ? (
@@ -50,7 +49,9 @@ function HomeScreen(props) {
                 </Row>
               )}
             </div>
+            <PaperCut value="*so*sweet*" />
           </Container>
+
           <Carousel />
           <Offer />
           <PaperCut value="*blouses*" />
