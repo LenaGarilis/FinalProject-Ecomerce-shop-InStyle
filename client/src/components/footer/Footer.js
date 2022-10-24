@@ -46,23 +46,9 @@ function Footer() {
             <Accordion defaultActiveKey="0">
               <Accordion.Item eventKey="0">
                 <Accordion.Header>
-                  <strong> ELENA GARILIS - Full Stack Developer</strong>
+                  <strong> KORNELI NASTAS - Frond End Developer </strong>
                 </Accordion.Header>
-                <Accordion.Body>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="1">
-                <Accordion.Header>
-                  <strong> KORNELI NASTAS - Frond End Developer</strong>
-                </Accordion.Header>
+
                 <Accordion.Body>
                   {" "}
                   <p>
@@ -87,19 +73,56 @@ function Footer() {
                   </Card.Link>
                 </Accordion.Body>
               </Accordion.Item>
+              <Accordion.Item eventKey="1">
+                <Accordion.Header>
+                  <strong> ELENA GARILIS - Full Stack Developer</strong>
+                </Accordion.Header>
+                <Accordion.Body>
+                  {" "}
+                  <p>
+                    I am motivated and community-focused Frontend developer. My
+                    previous working experience made me the good team player,
+                    fast learner, able to pick up new skills and juggle
+                    different projects and roles with relative ease
+                  </p>
+                  <p>
+                    Ready to start new career continuing to learn in a agile
+                    environment
+                  </p>
+                  <Card.Link href="https://www.linkedin.com/in/elena-garilis-0431a0249/">
+                    <Button size="sm" variant="success">
+                      LinkedIn
+                    </Button>{" "}
+                  </Card.Link>
+                  <Card.Link href="https://react-portfolio-seven-xi.vercel.app/skills">
+                    <Button size="sm" variant="info">
+                      Portfolio
+                    </Button>{" "}
+                  </Card.Link>
+                </Accordion.Body>
+              </Accordion.Item>
               <Accordion.Item eventKey="2">
                 <Accordion.Header>
                   <strong> ZHUO YANG - Back End Mentor</strong>
                 </Accordion.Header>
                 <Accordion.Body>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  {" "}
+                  <p>
+                    I'm a full stack developer with a passion to learn new
+                    knowledge and meet new challenges, currently looking for a
+                    back-end developer position or full-stack position.
+                  </p>
+                  <p>I love helping people learn REACT and programming</p>
+                  <Card.Link href="https://www.linkedin.com/in/zhuo-yang-3881869b/">
+                    <Button size="sm" variant="success">
+                      LinkedIn
+                    </Button>{" "}
+                  </Card.Link>
+                  <Card.Link href="https://github.com/hudir">
+                    <Button size="sm" variant="info">
+                      GitHub
+                    </Button>{" "}
+                  </Card.Link>
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>
