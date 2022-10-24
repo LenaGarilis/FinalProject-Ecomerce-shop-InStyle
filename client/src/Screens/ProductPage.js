@@ -61,9 +61,6 @@ function ProductScreen() {
     <>
       <Container>
         <div className="pt-3">
-          <Link className="btn btn-light my-3" to="/">
-            Go Back
-          </Link>
           {isLoading ? (
             <Loader />
           ) : isError ? (
@@ -71,11 +68,16 @@ function ProductScreen() {
           ) : (
             <Row>
               <Col md={6}>
-                <Image src={product.image} alt={product.name} fluid />
+                <Image
+                  className="rounded"
+                  src={product.image}
+                  alt={product.name}
+                  fluid
+                />
               </Col>
               <Col md={3}>
-                <ListGroup variant="flush">
-                  <ListGroupItem>
+                <ListGroup className="rounded" variant="flush">
+                  <ListGroupItem className="h3-color">
                     <h3>{product.name}</h3>
                   </ListGroupItem>
                   <ListGroupItem>

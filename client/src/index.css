@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barriecito&display=swap");
+
 body {
   width: 100vw;
 }
@@ -31,15 +33,20 @@ a {
 
 /* Mainpage */
 .mainPage-top {
-  margin-top: 47rem;
+  margin-top: 30rem;
 }
 
 .banner-top {
-  background-image: url(../public/images/banner.jpg);
+  background-image: url(../public/images/18.gif);
   width: 100vw;
-  height: 60%;
-  background-size: cover;
-  background-position: center;
+  height: 65%;
+  background-repeat: repeat-x;
+  /* background-size: 100% 100%; */
+  /* width: 100vw;
+  height: 1900px; */
+
+  /* background-size: cover; */
+  background-position: top;
   position: fixed;
   z-index: -1;
 }
@@ -160,4 +167,13 @@ a {
     #32baf6,
     #39cbfb
   );
+}
+
+.h3-color {
+  color: #fff;
+  background-color: #e83284;
+  font-family: "Barriecito", cursive;
+}
+.font-logo {
+  font-family: "Barriecito", cursive;
 }

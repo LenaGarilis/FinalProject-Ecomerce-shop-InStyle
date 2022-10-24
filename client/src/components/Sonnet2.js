@@ -6,8 +6,11 @@ function Sonnet2() {
   return (
     <div className="  md-3 ">
       <Card>
-        <Card.Header>
-          <strong>BEARS 💛 HONEY</strong>
+        <Card.Header className="font-logo1">
+          <strong>
+            {" "}
+            <h5> BEARS 💛 HONEY </h5>{" "}
+          </strong>
         </Card.Header>
         <Card.Body>
           <Card.Title>

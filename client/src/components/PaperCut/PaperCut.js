@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 
 function PaperCut({ value }) {
   return (
-    <Container className="py-3">
+    <Container className="py-3  ">
       <div className="banner-heading-b">
         <div className="text-banner">
           {value.split("").map((char, i) => (

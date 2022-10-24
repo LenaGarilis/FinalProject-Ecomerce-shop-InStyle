@@ -8,7 +8,7 @@ import { clearOrder } from "../features/order/orderReducer";
 import { clearCartItems } from "../features/cart/cartReducer";
 import { clearUserDetail } from "../features/user/UserDetailSlice";
 import CartHeader from "./CartHeader";
-import SearchBox from "./SearchBox";
+// import SearchBox from "./SearchBox";
 
 function Header() {
   const userLogin = useSelector((state) => state.userLogin);
@@ -32,11 +32,11 @@ function Header() {
       <Navbar bg="primary" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand>
-              <strong>BEARS 💛 HONEY</strong>
+            <Navbar.Brand className="h3-color">
+              <h4>BEARS 💛 HONEY</h4>
             </Navbar.Brand>
           </LinkContainer>
-          <SearchBox />
+
           <Navbar.Toggle aria-controls="basic-navbar-nav " />
           <Navbar.Collapse id="basic-navbar-na" className="justify-content-end">
             <Nav className="ms-auto">
