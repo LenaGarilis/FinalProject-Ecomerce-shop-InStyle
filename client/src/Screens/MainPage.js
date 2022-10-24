@@ -34,7 +34,6 @@ function HomeScreen(props) {
         <div className="main-container">
           <Container className="products-container">
             <div className="">
-              <PaperCut value="*slippers*" />
               {isLoading ? (
                 <Loader />
               ) : isError ? (
@@ -49,7 +48,7 @@ function HomeScreen(props) {
                 </Row>
               )}
             </div>
-            <PaperCut value="*so*sweet*" />
+            <PaperCut value="*slippers*" />
           </Container>
 
           <Carousel />
