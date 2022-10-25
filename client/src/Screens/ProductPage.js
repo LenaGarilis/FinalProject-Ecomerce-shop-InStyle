@@ -24,6 +24,25 @@ import Sonnet from "../components/Sonnet2";
 import Sonnet2 from "../components/Sonnet";
 import Sonnet3 from "../components/Sonnet3";
 import Buyme from "../components/BuymeCard/Buyme";
+import Pagination from "react-bootstrap/Pagination";
+
+let active = "";
+let items = [];
+for (let number = 36; number <= 38; number++) {
+  items.push(
+    <Pagination.Item key={number} active={number === active}>
+      {number}
+    </Pagination.Item>
+  );
+}
+
+const paginationBasic = (
+  <div>
+    <Pagination size="lg">{items}</Pagination>
+  </div>
+);
+
+// render(paginationBasic);
 
 function ProductScreen() {
   const { product, isLoading, isError, message } = useSelector(
@@ -113,6 +132,11 @@ function ProductScreen() {
                               : "Out Of Stock"}
                           </strong>
                         </Col>
+                      </Row>
+                    </ListGroupItem>
+                    <ListGroupItem>
+                      <Row>
+                        <Col>{paginationBasic}</Col>
                       </Row>
                     </ListGroupItem>
 
