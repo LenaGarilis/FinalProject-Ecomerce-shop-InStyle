@@ -3,14 +3,8 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { Form, Button, Container, Image, Row, Col } from "react-bootstrap";
-import {
-  getUserProfile,
-  clearUserDetail,
-} from "../features/user/UserDetailSlice.js";
-import {
-  updateUserProfileReset,
-  updateUserProfile,
-} from "../features/user/UpdateUserDetails.js";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 function OrderDesignForm() {
   const navigate = useNavigate();
@@ -20,10 +14,11 @@ function OrderDesignForm() {
   const [name, setName] = useState("");
   const [text, setText] = useState("");
   const [image, setImage] = useState("");
-  const [err, setErr] = useState("");
+  const [banner, setBanner] = useState("");
+  const [bool, setBool] = useState(false);
 
   const userProfile = useSelector((state) => state.userProfile);
-  const { error, user } = userProfile;
+  const { user } = userProfile;
   const userLogin = useSelector((state) => state.userLogin);
   const { userInfo } = userLogin;
 
@@ -33,13 +28,39 @@ function OrderDesignForm() {
     } else {
       setName(user.name);
       setEmail(user.email);
-      setText(user.text);
     }
   }, [dispatch, navigate, userInfo, user.name, user]);
 
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
+    try {
+      let data = {
+        name,
+        email,
+        text,
+        image,
+      };
+      setBool(true);
+      const res = await axios.post(`http://localhost:5005/api/contact`, data);
+      if (name.length === 0 || email.length === 0 || text.lenght === 0) {
+        setBanner(res.data.msg);
+        toast.error(res.data.msg);
+        setBool(false);
+      } else if (res.status === 200) {
+        setBanner(res.data.msg);
+        toast.success(res.data.msg);
+        setBool(false);
+
+        setName("");
+        setEmail("");
+        setText("");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+    //console.log(data);
   };
+  console.log(text);
 
   return (
     <div>
@@ -55,6 +76,7 @@ function OrderDesignForm() {
                 style={{ textAlign: "left", fontWeight: "900" }}
               >
                 <Form.Group controlId="name" className="mb-2">
+                  <p className="text-center banner">{banner}</p>
                   <Form.Label>What is your name?</Form.Label>
                   <Form.Control
                     type="name"
@@ -107,7 +129,19 @@ function OrderDesignForm() {
 
                 <div className="d-grid gap-2 mt-2">
                   <Button type="submit" variant="primary">
-                    Send
+                    <div>
+                      <h5 className="button">Send</h5>
+                      {bool ? (
+                        <b className="load">
+                          <img
+                            src="images/load2.gif"
+                            alt="image not responding"
+                          />
+                        </b>
+                      ) : (
+                        ""
+                      )}
+                    </div>
                   </Button>
                 </div>
               </Form>
