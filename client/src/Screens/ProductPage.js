@@ -28,7 +28,7 @@ import Pagination from "react-bootstrap/Pagination";
 
 let active = "";
 let items = [];
-for (let number = 36; number <= 38; number++) {
+for (let number = 35; number <= 39; number++) {
   items.push(
     <Pagination.Item key={number} active={number === active}>
       {number}
@@ -38,7 +38,7 @@ for (let number = 36; number <= 38; number++) {
 
 const paginationBasic = (
   <div>
-    <Pagination size="lg">{items}</Pagination>
+    <Pagination>{items}</Pagination>
   </div>
 );
 
@@ -143,10 +143,11 @@ function ProductScreen() {
                     {product.countInStock > 0 && (
                       <ListGroupItem>
                         <Row>
-                          <Col>Qty</Col>
+                          <Col>Quantity:</Col>
                           <Col>
                             <Form.Control
                               as="select"
+                              size="sm"
                               value={qty}
                               onChange={(e) => setQty(Number(e.target.value))}
                             >
