@@ -12,6 +12,8 @@ import PaymentScreen from "./Screens/PaymentPage";
 import OfferPage from "./Screens/OfferPage";
 import PlaceOrderScreen from "./Screens/PlaceOrderPage";
 import OrderDesignForm from "./Screens/OrderDesignForm";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (
@@ -19,6 +21,7 @@ const App = () => {
       <Header />
 
       <main>
+        <ToastContainer />
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/login/shipping" element={<ShippingScreen />} />
