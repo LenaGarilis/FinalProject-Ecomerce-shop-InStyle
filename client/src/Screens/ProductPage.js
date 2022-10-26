@@ -30,11 +30,7 @@ let active = "";
 let items = [];
 for (let number = 35; number <= 39; number++) {
   items.push(
-    <Pagination.Item
-      className="bg-size rounded"
-      key={number}
-      active={number === active}
-    >
+    <Pagination.Item key={number} active={number === active}>
       {number}
     </Pagination.Item>
   );
@@ -140,9 +136,7 @@ function ProductScreen() {
                     </ListGroupItem>
                     <ListGroupItem>
                       <Row>
-                        <Col>
-                          <div>{paginationBasic}</div>
-                        </Col>
+                        <Col>{paginationBasic}</Col>
                       </Row>
                     </ListGroupItem>
 
