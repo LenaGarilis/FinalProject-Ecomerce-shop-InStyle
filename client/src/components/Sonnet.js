@@ -5,7 +5,7 @@ function Sonnet() {
   return (
     <div className=" md-3 ">
       <Card>
-        <Card.Header className="font-logo1">
+        <Card.Header className="font-logo1 ">
           <strong>
             {" "}
             <h5> BEARS 💛 HONEY </h5>{" "}
