@@ -101,7 +101,7 @@ function ProductScreen() {
               <Col md={3}>
                 <ListGroup className="rounded" variant="flush">
                   <ListGroupItem className="bg-size">
-                    <h3>{product.name}</h3>
+                    <h1>{product.name}</h1>
                   </ListGroupItem>
                   <ListGroupItem>
                     <Rating

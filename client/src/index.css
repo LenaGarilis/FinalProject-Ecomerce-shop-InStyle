@@ -192,3 +192,6 @@ h5.button {
   text-shadow: -1px -1px 1px hsla(0, 0%, 5%, 0.105),
     1px 1px 1px hsla(0, 0%, 0%, 0.173);
 }
+.fontsize {
+  font-size: 18px;
+}
