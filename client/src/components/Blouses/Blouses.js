@@ -3,6 +3,7 @@ import blousesdata from "./blousesdata.js";
 import "./blouses.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Alert from "react-bootstrap/Alert";
+import Button from "react-bootstrap/Button";
 
 function Blouses(props) {
   return (
