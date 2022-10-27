@@ -63,9 +63,9 @@ function Blouses(props) {
                     data-lightbox-gallery="gallery1"
                   >
                     <div className="hover-text">
-                      <h4>{title}</h4>
-                      <h4>{name}</h4>
-                      <h4>€{price}</h4>
+                      <h2 className="font-logo1"> {title}</h2>
+                      <h2 className="font-logo1">{name}</h2>
+                      <h2 className="font-logo1">€{price}</h2>
                     </div>
                     <img
                       src={smallImage}

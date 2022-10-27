@@ -20,7 +20,7 @@ function Buyme(props) {
                   <div className="hover-text1">
                     <h4 className="font-logo1">{title}</h4>
                     <h4 className="font-logo1">{name}</h4>
-                    <h4>€{price}</h4>
+                    <h2 className="font-logo1"> € {price}</h2>
                   </div>
                   <img
                     src={smallImage}
