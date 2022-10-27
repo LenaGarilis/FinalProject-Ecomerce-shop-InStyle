@@ -31,7 +31,7 @@ let items = [];
 for (let number = 35; number <= 39; number++) {
   items.push(
     <Pagination.Item
-      className="bg-size rounded"
+      className="bg-size rounded "
       key={number}
       active={number === active}
     >
@@ -100,7 +100,7 @@ function ProductScreen() {
               </Col>
               <Col md={3}>
                 <ListGroup className="rounded" variant="flush">
-                  <ListGroupItem className="h3-color">
+                  <ListGroupItem className="bg-size">
                     <h3>{product.name}</h3>
                   </ListGroupItem>
                   <ListGroupItem>
