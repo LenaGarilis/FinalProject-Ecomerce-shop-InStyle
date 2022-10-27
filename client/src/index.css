@@ -181,6 +181,8 @@ h5.button {
   color: #fff;
   background-color: #e83284;
   font-family: "Barriecito", cursive;
+  text-shadow: -1px -1px 1px hsla(0, 0%, 5%, 0.105),
+    1px 1px 1px hsla(0, 0%, 0%, 0.173);
 }
 .font-logo {
   font-family: "Barriecito", cursive;
