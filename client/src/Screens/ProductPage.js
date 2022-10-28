@@ -138,9 +138,9 @@ function ProductScreen() {
                         </Col>
                       </Row>
                     </ListGroupItem>
-                    <ListGroupItem className="bg-size">
+                    <ListGroupItem>
                       <Row>
-                        <Col className="bg-size-font">{paginationBasic}</Col>
+                        <Col>{paginationBasic}</Col>
                       </Row>
                     </ListGroupItem>
 
