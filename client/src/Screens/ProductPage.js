@@ -81,7 +81,7 @@ function ProductScreen() {
   };
 
   return (
-    <>
+    <main className="main-container">
       <Container>
         <div className="pt-3">
           {isLoading ? (
@@ -201,7 +201,7 @@ function ProductScreen() {
         </div>
       </Container>
       <Buyme />
-    </>
+    </main>
   );
 }
 
