@@ -30,7 +30,11 @@ let active = "";
 let items = [];
 for (let number = 35; number <= 39; number++) {
   items.push(
-    <Pagination.Item key={number} active={number === active}>
+    <Pagination.Item
+      // className="bg-size rounded "
+      key={number}
+      active={number === active}
+    >
       {number}
     </Pagination.Item>
   );
@@ -77,7 +81,7 @@ function ProductScreen() {
   };
 
   return (
-    <>
+    <main className="main-container">
       <Container>
         <div className="pt-3">
           {isLoading ? (
@@ -96,8 +100,8 @@ function ProductScreen() {
               </Col>
               <Col md={3}>
                 <ListGroup className="rounded" variant="flush">
-                  <ListGroupItem className="h3-color">
-                    <h3>{product.name}</h3>
+                  <ListGroupItem className="bg-size">
+                    <h1>{product.name}</h1>
                   </ListGroupItem>
                   <ListGroupItem>
                     <Rating
@@ -197,7 +201,7 @@ function ProductScreen() {
         </div>
       </Container>
       <Buyme />
-    </>
+    </main>
   );
 }
 

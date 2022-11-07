@@ -4,7 +4,7 @@ import OfferPageDescription from "../components/OfferPage/OfferPageDescription";
 
 const OfferPage = () => {
   return (
-    <div>
+    <div className="main-container">
       <OfferPageDescription />
       <OfferOrderSteps />
     </div>

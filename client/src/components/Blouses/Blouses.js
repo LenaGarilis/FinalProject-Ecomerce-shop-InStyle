@@ -3,6 +3,7 @@ import blousesdata from "./blousesdata.js";
 import "./blouses.css";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Alert from "react-bootstrap/Alert";
+import Button from "react-bootstrap/Button";
 
 function Blouses(props) {
   return (
@@ -62,9 +63,9 @@ function Blouses(props) {
                     data-lightbox-gallery="gallery1"
                   >
                     <div className="hover-text">
-                      <h4>{title}</h4>
-                      <h4>{name}</h4>
-                      <h4>€{price}</h4>
+                      <h2 className="font-logo1"> {title}</h2>
+                      <h2 className="font-logo1">{name}</h2>
+                      <h2 className="font-logo1">€{price}</h2>
                     </div>
                     <img
                       src={smallImage}
