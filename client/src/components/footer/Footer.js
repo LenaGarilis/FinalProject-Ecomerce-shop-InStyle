@@ -94,7 +94,7 @@ function Footer() {
                       LinkedIn
                     </Button>{" "}
                   </Card.Link>
-                  <Card.Link href="https://react-portfolio-seven-xi.vercel.app/skills">
+                  <Card.Link href="https://react-portfolio-seven-xi.vercel.app">
                     <Button size="sm" variant="info">
                       Portfolio
                     </Button>{" "}

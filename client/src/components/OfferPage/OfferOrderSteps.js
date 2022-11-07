@@ -9,7 +9,7 @@ function OfferOrderSteps() {
         <div className="py-3" id="offer">
           <Card>
             <Card.Header className="text-center">
-              <h3>Custom Design Your Own Sneakers - Only $89</h3>
+              <h3>CUSTOM DESIGN OF YOUR SHOES - Only $89</h3>
             </Card.Header>
 
             <CardGroup>
@@ -102,7 +102,7 @@ function OfferOrderSteps() {
 
         <Card className="mb-3">
           <Card.Header className="text-center">
-            <h3>Put your best foot forward in</h3>
+            <h3>STEP FORWARD IN</h3>
             <p>Custom designed shoes</p>
           </Card.Header>
           <Carousel fade>

@@ -1,9 +1,12 @@
 import express from "express";
 import nodemailer from "nodemailer";
+import dotenv from "dotenv";
+
 const router = express.Router();
 
 router.post("/", (req, res) => {
   let data = req.body;
+  console.log(data);
   if (
     data.name.length === 0 ||
     data.email.length === 0 ||
@@ -17,7 +20,7 @@ router.post("/", (req, res) => {
     port: 465,
     auth: {
       user: "natureluxdesign@gmail.com",
-      pass: "whzfbxjkyxnfbxuw",
+      pass: process.env.GMAIL,
     },
   });
   let mailOptions = {
@@ -35,8 +38,9 @@ router.post("/", (req, res) => {
              
             `,
   };
+  // imgUrl: req.files.image.name,
+
   {
-    /* <div>${image}</div> */
   }
   smtpTransporter.sendMail(mailOptions, (error) => {
     try {

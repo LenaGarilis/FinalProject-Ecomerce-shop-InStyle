@@ -9,6 +9,7 @@ import {
   Card,
   Container,
 } from "react-bootstrap";
+import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
@@ -185,7 +186,7 @@ const PlaceOrderScreen = () => {
                   </ListGroup.Item>
 
                   <div className="d-grid gap-2 py-2 px-1">
-                    <Button
+                    {/* <Button
                       type="button"
                       variant="primary"
                       className="btn-block"
@@ -196,9 +197,27 @@ const PlaceOrderScreen = () => {
                       }
                     >
                       Place Order
-                    </Button>
+                    </Button> */}
+
+                    <PayPalScriptProvider
+                      options={{
+                        "client-id": "test",
+                        currency: "EUR",
+                        "disable-funding": "giropay,sepa",
+                        locale: "en_DE",
+                      }}
+                    >
+                      <PayPalButtons
+                        style={{
+                          layout: "vertical",
+                          color: "white",
+                          shape: "pill",
+                        }}
+                      />
+                    </PayPalScriptProvider>
                   </div>
-                  {confirmedOrder.status === "SUCCESS" && (
+
+                  {/* {confirmedOrder.status === "SUCCESS" && (
                     <div className="d-grid py-2 gap-2 px-1">
                       <Button
                         type="button"
@@ -209,7 +228,7 @@ const PlaceOrderScreen = () => {
                         Order payment
                       </Button>
                     </div>
-                  )}
+                  )} */}
                 </ListGroup>
               </Card>
             </Col>

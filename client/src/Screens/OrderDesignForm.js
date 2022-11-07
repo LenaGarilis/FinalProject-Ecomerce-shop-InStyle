@@ -40,8 +40,30 @@ function OrderDesignForm() {
         text,
         image,
       };
+
       setBool(true);
-      const res = await axios.post(`http://localhost:5005/api/contact`, data);
+
+      //let formData = new FormData();
+      // for (let key in data) {
+      //   formData.append(key, data[key]);
+      // }
+      // console.log(formData);
+
+      // const data = new FormData();
+      // data.append("name", name);
+      // data.append("email", email);
+      // data.append("text", text);
+      // data.append("image", image);
+
+      const res = await axios.post(
+        `http://localhost:5005/api/contact`,
+        data
+        // {
+        //   headers: {
+        //     "Content-Type": "multipart/form-data",
+        //   },
+        // }
+      );
       if (name.length === 0 || email.length === 0 || text.lenght === 0) {
         setBanner(res.data.msg);
         toast.error(res.data.msg);
@@ -55,6 +77,7 @@ function OrderDesignForm() {
         setEmail("");
         setText("");
       }
+      // navigate("/");
     } catch (error) {
       console.log(error);
     }
