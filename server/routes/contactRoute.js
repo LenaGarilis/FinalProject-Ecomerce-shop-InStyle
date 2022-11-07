@@ -1,14 +1,10 @@
 import express from "express";
 import nodemailer from "nodemailer";
-
-import dotenv from "dotenv";
-
-
 const router = express.Router();
+import dotenv from "dotenv";
 
 router.post("/", (req, res) => {
   let data = req.body;
-
   if (
     data.name.length === 0 ||
     data.email.length === 0 ||
@@ -22,11 +18,7 @@ router.post("/", (req, res) => {
     port: 465,
     auth: {
       user: "natureluxdesign@gmail.com",
-
       pass: process.env.GMAIL,
-
-      pass: "whzfbxjkyxnfbxuw",
-
     },
   });
   let mailOptions = {
@@ -45,7 +37,6 @@ router.post("/", (req, res) => {
             `,
   };
 
-  }
   smtpTransporter.sendMail(mailOptions, (error) => {
     try {
       if (error)
