@@ -40,8 +40,10 @@ function OrderDesignForm() {
         text,
         image,
       };
+
       setBool(true);
       const res = await axios.post(`http://localhost:5005/api/contact`, data);
+
       if (name.length === 0 || email.length === 0 || text.lenght === 0) {
         setBanner(res.data.msg);
         toast.error(res.data.msg);
@@ -55,6 +57,7 @@ function OrderDesignForm() {
         setEmail("");
         setText("");
       }
+
     } catch (error) {
       console.log(error);
     }
